@@ -14,22 +14,8 @@ print("noob")
 print("ANjing")
 print("dah dah ah tu")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("hello world")
+print("InsyaALlah one day akan siap")
 
 # #Python Execution Time
 #
