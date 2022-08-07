@@ -1,7 +1,7 @@
 # Music Type Prediction Project
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
-iomport joblib as jb
+import joblib as jb
 
 music_df = pd.read_csv('music.csv')
 music_df.head()
