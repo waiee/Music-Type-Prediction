@@ -11,5 +11,7 @@ y = music_df['genre']
 model = DecisionTreeClassifier()
 model.fit(X,y)
 
-predictions = model.predict([[21,1],[22,0]])
-predictions
+joblib.dump(model, 'music-recommender.joblib')
+
+# predictions = model.predict([[21,1],[22,0]])
+# predictions
