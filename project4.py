@@ -1,7 +1,7 @@
 # Music Type Prediction Project
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.externals import joblib
+iomport joblib as jb
 
 music_df = pd.read_csv('music.csv')
 music_df.head()
@@ -11,7 +11,7 @@ y = music_df['genre']
 model = DecisionTreeClassifier()
 model.fit(X,y)
 
-joblib.dump(model, 'music-recommender.joblib')
+jb.dump(model, 'music-recommender.joblib')
 
 # predictions = model.predict([[21,1],[22,0]])
 # predictions
