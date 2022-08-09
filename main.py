@@ -10,7 +10,7 @@ music_df = pd.read_csv('music.csv')
 music_df.head()
 X = music_df.drop(columns=['genre'])
 y = music_df['genre']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
 #--- DECISION TREE MODEL---
 model = DecisionTreeClassifier()
