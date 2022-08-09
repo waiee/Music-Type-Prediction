@@ -21,5 +21,7 @@ model = jb.load('music-recommender.joblib')
 predictions = model.predict([[21,1]])
 predictions
 
+print("Hello World.")
+
 # predictions = model.predict([[21,1],[22,0]])
 # predictions
