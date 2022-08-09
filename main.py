@@ -2,6 +2,7 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 import joblib as jb
 
 #--- DATAFRAME ---
@@ -16,16 +17,15 @@ model = DecisionTreeClassifier()
 
 # --- TRAIN MODEL ---
 model.fit(X,y)
+predictions = model.predict(X_test)
+
+#---- FIND ACCURACY ----
+score = accuracy_score(y_test, predictions)
+score
 
 #--- MODEL PERSISTANCE ---
 # jb.dump(model, 'music-recommender.joblib')
 # model = jb.load('music-recommender.joblib')
 
-predictions = model.predict(X_test)
-
-
 # predictions = model.predict([[21,1], [22, 0]])
-predictions
-
-# predictions = model.predict([[21,1],[22,0]])
 # predictions
