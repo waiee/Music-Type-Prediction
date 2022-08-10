@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-form sklearn import tree
+from sklearn import tree
 import joblib as jb
 
 #--- DATAFRAME ---
@@ -33,9 +33,10 @@ model = DecisionTreeClassifier()
 
 #--- VISUALIZING DECISION TREE ---
 model.fit(X,y)
+
 tree.export_graphviz(model, out_file='music-recommender.dot',
                     feature_names=['age', 'gender'],
                     class_names=sorted(y.unique()),
                     label='all',
                     rounded=True,
-                    filled=True))
+                    filled=True)
