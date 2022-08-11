@@ -23,7 +23,9 @@ Then, I tried to do persistence model using joblib. This one is for practise pur
 
 The last part, I tried to visualize the tree for study purpose.
 
-![](code2.png)
+![](musictree.png)
 
-In conclusion, the data was too small, so the result wasn't accurate.
+__In conclusion__, the data was too small: so the result wasn't accurate. 
+
+For the future work, i would use a bigger data and try to use various of models.
 
