@@ -17,12 +17,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8)
 model = DecisionTreeClassifier()
 
 # --- TRAIN MODEL ---
-# model.fit(X,y)
-# predictions = model.predict(X_test)
+model.fit(X,y)
+predictions = model.predict(X_test)
 
 #---- FIND ACCURACY ----
-# score = accuracy_score(y_test, predictions)
-# score
+score = accuracy_score(y_test, predictions)
+score
 
 #--- MODEL PERSISTANCE ---
 # jb.dump(model, 'music-recommender.joblib')
