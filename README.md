@@ -17,7 +17,7 @@ After that,  I tried to calculate the accuracy score, it seems that I always got
 
 ![](code2.png)
 
-Then, I tried to do persistence model, this one is for practise purposes.
+Then, I tried to do persistence model using joblib. This one is for practise purposes.
 
 ![](code3.png)
 
