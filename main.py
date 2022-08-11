@@ -25,11 +25,11 @@ score = accuracy_score(y_test, predictions)
 score
 
 #--- MODEL PERSISTANCE ---
-# jb.dump(model, 'music-recommender.joblib')
-# model = jb.load('music-recommender.joblib')
+jb.dump(model, 'music-recommender.joblib')
+model = jb.load('music-recommender.joblib')
 
-# predictions = model.predict([[21,1], [22, 0]])
-# predictions
+predictions = model.predict([[21,1], [22, 0]])
+predictions
 
 #--- VISUALIZING DECISION TREE ---
 model.fit(X,y)
