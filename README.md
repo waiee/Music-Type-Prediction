@@ -2,7 +2,7 @@
 
 My first machine learning project! :smile: 
 
-In this simple project, I will predict the best type of music based on gender and age. The data wiil be music.csv.
+In this simple project, I will predict the best type of music based on gender and age. The data will be music.csv.
 
 __The head of music.csv:__
 
